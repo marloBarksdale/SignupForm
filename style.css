@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,200&display=swap');
+
 @font-face {
     font-family: Norse;
     src: url(./assets/NorseBold.otf) format("opentype");
@@ -13,6 +15,7 @@
 html, body {
     min-height: 100%;
     background: hsla(210, 20%, 98%, 1);
+    font-family: Poppins, sans-serif;
 }
 
 
@@ -63,7 +66,49 @@ html, body {
 .top-container {
 
 
-    padding: 80px 80px 20px 20px;
+    padding: 100px 100px 20px 20px;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+
+form {
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+
+}
+
+.form-container {
+    background: hsla(0, 0%, 100%, 1);
+    padding: 50px;
+    padding-top: 20px;
+}
+
+.col1, .col2, label {
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+.col1, .col2 {
+    gap: 20px;
+}
+
+input {
+    padding: 4px 10px;
+    font-size: 1em;
+    color: #777;
+    width: 100%;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #596d48;
+    font-size: 1rem;
+    padding: 10px 60px;
+    border-radius: 4px;
+    color: hsl(0, 0%, 100%);
 }
