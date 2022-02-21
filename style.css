@@ -28,7 +28,7 @@ html, body {
     max-width: 100%;
     max-height: 100%;
 
-
+    height: -webkit-fill-available;
 }
 
 .logo {
@@ -59,14 +59,15 @@ html, body {
 .content {
     display: flex;
     flex-direction: column;
-    flex: 2
+    flex: 2;
+
 }
 
 
 .top-container {
 
 
-    padding: 100px 100px 20px 20px;
+    padding: 100px 130px 50px 50px;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -83,6 +84,7 @@ form {
     background: hsla(0, 0%, 100%, 1);
     padding: 50px;
     padding-top: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
 }
 
 .col1, .col2, label {
@@ -111,4 +113,36 @@ button {
     padding: 10px 60px;
     border-radius: 4px;
     color: hsl(0, 0%, 100%);
+    margin-bottom: 10px;
+
+}
+
+
+.bottom-container {
+    padding: 20px 80px 80px 50px;
+    font-weight: bold;
+}
+
+.bottom-container span {
+    color: #596d48;
+}
+
+
+input:focus {
+    outline: 1px solid hsl(220, 90%, 91%);
+    box-shadow: 0px 0px 2px 1px hsl(220, 90%, 91%);
+}
+
+label span {
+    margin-bottom: 8px;
+
+}
+
+form #lastName:focus {
+    outline: 1px solid hsl(220, 94%, 79%);
+    box-shadow: 0px 0px 2px 1px hsl(220, 94%, 79%);
+}
+
+form input:focus:invalid {
+    outline: 1px solid red;
 }
